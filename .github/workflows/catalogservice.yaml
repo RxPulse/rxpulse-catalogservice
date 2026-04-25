@@ -46,7 +46,7 @@ jobs:
         (github.event_name == 'pull_request' && needs.sonar-and-snyk.result == 'success') ||
         github.event_name == 'push'
       )
-    uses: RxPulse/rxpulse-ci-workflows/.github/workflows/build-image.yaml@templates
+    uses: RxPulse/rxpulse-ci-workflows/.github/workflows/build-image.yaml@develop
     with:
       service-name: catalog
       service-path: .
